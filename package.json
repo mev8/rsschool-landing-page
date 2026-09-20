@@ -1,0 +1,20 @@
+{
+  "name": "rsschool-landing-page",
+  "version": "1.0.0",
+  "description": "Task landing page: CoffeeHouse",
+  "homepage": "https://github.com/mev8/rsschool-landing-page#readme",
+  "bugs": {
+    "url": "https://github.com/mev8/rsschool-landing-page/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mev8/rsschool-landing-page.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
