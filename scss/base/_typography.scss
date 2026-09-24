@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    @include font-style($size: 1.6rem, $height: 150%, $weight: 400);
+}

@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+body {
+    color: $color-primary;
+}
+
+.wrapper {
+    max-width: 136rem;
+    margin: 0 auto;
+}

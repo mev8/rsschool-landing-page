@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+.btn {
+    display: inline-flex;
+    cursor: pointer;
+    border-radius: 3rem;
+    text-align: center;
+    border: none;
+    background: transparent;
+
+    &--primary {
+        padding: 2rem 6.8rem;
+        background-color: $color-inverse;
+        color: $color-primary;
+        @include font-style($size: 1.6rem, $height: 150%, $weight: 600);
+    }
+
+    &__text {
+        transform: translateX(1rem);
+        transition: transform 0.5s ease;
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        opacity: 0;
+        background-image: url('./assets/images/icons/coffee-cup.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        transition: all 0.5s ease;
+    }
+
+    &:hover {
+        .btn__text {
+            transform: translateX(-0.7rem);
+        }
+
+        .btn__icon {
+            opacity: 1;
+        }
+    }
+}

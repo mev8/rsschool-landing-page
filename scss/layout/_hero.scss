@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+.hero {
+    background-color: $color-bg-page;
+
+    &__wrapper {
+        border-radius: 4rem;
+        background-image: url('./assets/images/hero/img-hero.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__content {
+        max-width: 73rem;
+        padding: 10rem;
+    }
+
+    &__title {
+        color: $color-inverse;
+        @include font-style($size: 7.2rem, $height: 105%);
+
+        &-first {
+            font-style: italic;
+            color: $color-accent;
+        }
+    }
+
+    &__description {
+        margin: 4rem 0;
+        color: $color-inverse;
+    }
+
+
+}
