@@ -1,0 +1,120 @@
+@use "../abstracts" as *;
+
+.favorite-coffee {
+    padding: 8rem 0;
+    background-color: $color-bg-page;
+
+    &__title {
+        margin-bottom: 4rem;
+        text-align: center;
+        color: $color-primary;
+        @include font-style($size: 6rem, $height: 125%);
+
+        &--accent {
+            font-style: italic;
+            color: $color-accent;
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__arrow-left,
+    &__arrow-right {
+        flex-shrink: 0;
+        width: 6rem;
+        height: 6rem;
+        border: 1px solid $color-border-inverse;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:hover {
+            // border-color: $color-primary;
+            background-color: $color-border-inverse;
+        }
+    }
+
+    &__arrow-left {
+        background-image: url('./assets/images/icons/arrow-left-dark.svg');
+
+        &:hover {
+            background-image: url('./assets/images/icons/arrow-left-light.svg');
+        }
+    }
+
+    &__arrow-right {
+        background-image: url('./assets/images/icons/arrow-right-dark.svg');
+
+        &:hover {
+            background-image: url('./assets/images/icons/arrow-right-light.svg');
+        }
+    }
+}
+
+.slide {
+    max-width: 115.2rem;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__image {
+        width: 48rem;
+        height: 48rem;
+        background-image: url('./assets/images/slider/coffee-slider-1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      max-width: 48rem;
+    }
+
+    &__title {
+      @include font-style($size: 2.4rem, $height: 125%);
+    }
+
+    &__text {
+      @include font-style($size: 1.6rem, $height: 150%, $weight: 400);
+      padding: 0 1rem;
+    }
+
+    &__price {
+      @include font-style($size: 2.4rem, $height: 125%);
+    }
+}
+
+.favorite-coffee__controls {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-top: 4rem;
+
+    .favorite-coffee__control {
+        width: 4rem;
+        height: 0.4rem;
+        background-color: $color-border-primary;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+
+    
+        &--active {
+            background-color: $color-primary;
+        }
+    }
+}

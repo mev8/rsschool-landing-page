@@ -176,7 +176,7 @@ body {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-image: url("../assets/images/icons/coffee-cup.svg");
+  background-image: url("./assets/images/icons/coffee-cup.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -211,6 +211,122 @@ body {
 .hero__description {
   margin: 4rem 0;
   color: #E1D4C9;
+}
+
+.favorite-coffee {
+  padding: 8rem 0;
+  background-color: #E1D4C9;
+}
+.favorite-coffee__title {
+  margin-bottom: 4rem;
+  text-align: center;
+  color: #403F3D;
+  font-family: "Inter", sans-serif;
+  font-size: 6rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-style: normal;
+}
+.favorite-coffee__title--accent {
+  font-style: italic;
+  color: #B0907A;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider__arrow-left, .slider__arrow-right {
+  flex-shrink: 0;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid #665F55;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.slider__arrow-left:hover, .slider__arrow-right:hover {
+  background-color: #665F55;
+}
+.slider__arrow-left {
+  background-image: url("./assets/images/icons/arrow-left-dark.svg");
+}
+.slider__arrow-left:hover {
+  background-image: url("./assets/images/icons/arrow-left-light.svg");
+}
+.slider__arrow-right {
+  background-image: url("./assets/images/icons/arrow-right-dark.svg");
+}
+.slider__arrow-right:hover {
+  background-image: url("./assets/images/icons/arrow-right-light.svg");
+}
+
+.slide {
+  max-width: 115.2rem;
+}
+.slide__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.slide__image {
+  width: 48rem;
+  height: 48rem;
+  background-image: url("./assets/images/slider/coffee-slider-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+.slide__description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  max-width: 48rem;
+}
+.slide__title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-style: normal;
+}
+.slide__text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 1rem;
+}
+.slide__price {
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.favorite-coffee__controls {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.favorite-coffee__controls .favorite-coffee__control {
+  width: 4rem;
+  height: 0.4rem;
+  background-color: #C1B6AD;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.favorite-coffee__controls .favorite-coffee__control--active {
+  background-color: #403F3D;
 }
 
 /*# sourceMappingURL=style.css.map */
