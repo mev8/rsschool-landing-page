@@ -214,7 +214,7 @@ body {
 }
 
 .favorite-coffee {
-  padding: 8rem 0;
+  padding: 10rem 0;
   background-color: #E1D4C9;
 }
 .favorite-coffee__title {
@@ -327,6 +327,56 @@ body {
 }
 .favorite-coffee__controls .favorite-coffee__control--active {
   background-color: #403F3D;
+}
+
+.about {
+  padding: 8rem 0;
+  background-color: #E1D4C9;
+}
+.about__title {
+  color: #403F3D;
+  font-family: "Inter", sans-serif;
+  font-size: 6rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-style: normal;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+.about__title--accent {
+  font-style: italic;
+  color: #B0907A;
+}
+.about__images {
+  display: flex;
+  gap: 4rem;
+}
+.about__column {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  flex: 1;
+}
+.about__image {
+  width: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.about__image--large {
+  height: 59rem;
+}
+.about__image--small {
+  height: 43rem;
+}
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+}
+.about__image:hover .about__img {
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=style.css.map */
