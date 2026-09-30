@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+.mobile-app {
+    padding: 8rem 0;
+    background-color: $color-bg-page;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 63rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    &__title {
+        color: $color-primary;
+        @include font-style($size: 6rem, $height: 125%);
+        padding-right: 8rem;
+
+        .mobile-app__accent {
+            font-style: italic;
+            color: $color-accent;
+        }
+    }
+
+    &__description {
+        color: $color-primary;
+        @include font-style($size: 1.6rem, $height: 150%, $weight: 400);
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__image {
+        flex-shrink: 0;
+        max-width: 63rem;
+
+        .mobile-app__img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}

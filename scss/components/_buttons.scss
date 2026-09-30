@@ -42,3 +42,70 @@
         }
     }
 }
+
+.button-store {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: 20rem;
+    height: 6.4rem;
+    border: 1px solid $color-border-inverse;
+    border-radius: 10rem;
+    background-color: transparent;
+    text-decoration: none;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+
+    &__icon {
+        width: 3.6rem;
+        height: 3.6rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-shrink: 0;
+        margin-left: 2rem;
+
+        &--app-store {
+            background-image: url('./assets/images/icons/icon-app-store-dark.svg');
+        }
+
+        &--google-play {
+            background-image: url('./assets/images/icons/icon-google-play-dark.svg');
+        }
+    }
+
+    &__content {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    &__subtitle,
+    &__title {
+        color: $color-primary;
+        transition: color 0.5s ease;
+    }
+    &__subtitle {
+        @include font-style($size: 1rem, $height: 140%, $weight: 400);
+    }
+
+    &__title{
+        @include font-style($size: 1.6rem, $height: 150%);
+    }
+
+    &:hover {
+        background-color: $color-bg-container;
+        border-color: $color-bg-container;
+
+        .button-store__subtitle,
+        .button-store__title {
+            color: $color-inverse;
+        }
+
+        .button-store__icon--app-store {
+            background-image: url('./assets/images/icons/icon-app-store-light.svg');
+        }
+
+        .button-store__icon--google-play {
+            background-image: url('./assets/images/icons/icon-google-play-light.svg');
+        }
+    }
+}

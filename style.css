@@ -86,6 +86,70 @@ body {
   opacity: 1;
 }
 
+.button-store {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 20rem;
+  height: 6.4rem;
+  border: 1px solid #665F55;
+  border-radius: 10rem;
+  background-color: transparent;
+  text-decoration: none;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+.button-store__icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  margin-left: 2rem;
+}
+.button-store__icon--app-store {
+  background-image: url("./assets/images/icons/icon-app-store-dark.svg");
+}
+.button-store__icon--google-play {
+  background-image: url("./assets/images/icons/icon-google-play-dark.svg");
+}
+.button-store__content {
+  display: inline-flex;
+  flex-direction: column;
+}
+.button-store__subtitle, .button-store__title {
+  color: #403F3D;
+  transition: color 0.5s ease;
+}
+.button-store__subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 400;
+  font-style: normal;
+}
+.button-store__title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 600;
+  font-style: normal;
+}
+.button-store:hover {
+  background-color: #665F55;
+  border-color: #665F55;
+}
+.button-store:hover .button-store__subtitle,
+.button-store:hover .button-store__title {
+  color: #E1D4C9;
+}
+.button-store:hover .button-store__icon--app-store {
+  background-image: url("./assets/images/icons/icon-app-store-light.svg");
+}
+.button-store:hover .button-store__icon--google-play {
+  background-image: url("./assets/images/icons/icon-google-play-light.svg");
+}
+
 .header {
   padding: 2rem 0;
   background-color: #E1D4C9;
@@ -148,7 +212,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  transition: background-image 0.3s ease;
+  transition: background-image 0.5s ease;
 }
 .theme-switch__btn--sun {
   background-image: url("./assets/images/icons/sun.png");
@@ -377,6 +441,56 @@ body {
 }
 .about__image:hover .about__img {
   transform: scale(1);
+}
+
+.mobile-app {
+  padding: 8rem 0;
+  background-color: #E1D4C9;
+}
+.mobile-app__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-app__content {
+  max-width: 63rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.mobile-app__title {
+  color: #403F3D;
+  font-family: "Inter", sans-serif;
+  font-size: 6rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-style: normal;
+  padding-right: 8rem;
+}
+.mobile-app__title .mobile-app__accent {
+  font-style: italic;
+  color: #B0907A;
+}
+.mobile-app__description {
+  color: #403F3D;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 400;
+  font-style: normal;
+}
+.mobile-app__buttons {
+  display: flex;
+  gap: 2rem;
+}
+.mobile-app__image {
+  flex-shrink: 0;
+  max-width: 63rem;
+}
+.mobile-app__image .mobile-app__img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
